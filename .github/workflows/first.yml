@@ -44,6 +44,7 @@ jobs:
       with:
         username: ${{ secrets.AZURE_REGISTRY_USERNAME }}
         password: ${{ secrets.AZURE_REGISTRY_PASSWORD }}
+        login-server: ${{ secrets.AZURE_REGISTRY_NAME }}
 
     - name: Build the Docker image
       run: |
