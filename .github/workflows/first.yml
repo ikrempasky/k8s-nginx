@@ -14,6 +14,7 @@ jobs:
         inlineScript: |
           az login --identity
           az group list
+          docker ps -a
           
           
           
