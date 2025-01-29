@@ -51,10 +51,12 @@ jobs:
         docker build -t ${{ secrets.AZURE_REGISTRY_NAME }}/mywebserver:latest .
 
     - name: Push the Docker image to Azure Container Registry
-    
       run: |
         docker push ${{ secrets.AZURE_REGISTRY_NAME }}/mywebserver:latest
-
+        
+    - name: Run the image
+      run: |
+        docker run -d ${{ secrets.AZURE_REGISTRY_NAME }}/mywebserver:latest
           
           
           
