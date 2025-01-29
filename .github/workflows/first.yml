@@ -15,4 +15,5 @@ jobs:
           az login --identity
           az group list  
           
+          
            
