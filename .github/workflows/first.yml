@@ -58,6 +58,7 @@ jobs:
       run: |
         docker run -p 80:80 -d ${{ secrets.AZURE_REGISTRY_NAME }}/mywebserver:latest
         
+        
           
           
           
